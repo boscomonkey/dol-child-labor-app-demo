@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, user-scalable=no"><link href="gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"><script src="ajax/libs/jquery/1.9.1/jquery.min.js"></script><script>   $(document).on("mobileinit", function () {     $.mobile.autoInitializePage = false;     $.mobile.hashListeningEnabled = false;   });   function mobileInitPage() {     $.mobile.hashListeningEnabled = true;     $.mobile.initializePage();   };</script><script src="mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script><!-- Uncomment the following to include cordova in your android project --><!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>--><!-- GK Loader use RequireJS to load module --><script src="docs/release/2.1.11/minified/require.js"></script><!--Plug in GK--><script src="components/jquery.gk/jquery.gk.min.js"></script><!-- Load GK components --><script components="components/gk-jquerymobile/content.html,components/gk-jquerymobile/page.html,components/gk-ext/gk-text.html" callback="mobileInitPage" src="components/gk-loader/gk-loader.js"></script><title>EZo App</title></head><body gk-app=""><!-- Page: home  --><div id="home" data-role="page">
+  <div data-role="header" data-position="fixed">
+    <h3>Child Labor App</h3>
+  </div>
+  <div role="main" class="ui-content">
+    <div is="gk-text">Welcome to the Department of Labor Child labor App!</div>
+  </div>
+  <div data-position="fixed" data-role="footer">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="home">Home</a>
+        </li>
+        <li>
+          <a data-icon="star" href="#Search">Search</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Page: Search  --><div id="Search" data-role="page" is="page">
+  <div data-role="header" data-position="fixed">
+    <h3>Metric</h3>
+  </div>
+  <div role="main" class="ui-content" is="content">
+    <div class="ui-field-contain">
+      <label for="gk-220ioLk">Search Metric:</label>
+      <input type="search" name="" id="gk-220ioLk">
+    </div>
+    <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">Choose Metric:</li>
+      <li>
+        <a href="#">
+          <img src="images/image.png" class="ui-li-icon">Assessment Level</a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/image.png" class="ui-li-icon">Country</a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/image.png" class="ui-li-icon">Exploitation Type</a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/image.png" class="ui-li-icon">Industry</a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/image.png" class="ui-li-icon">Product</a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/image.png" class="ui-li-icon">Social Programs</a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/image.png" class="ui-li-icon">Suggested Actions</a>
+      </li>
+    </ul>
+  </div>
+  <div data-position="fixed" data-role="footer">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="home" href="#home">Home</a>
+        </li>
+        <li>
+          <a data-icon="search">Search</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Page: AssessmentLevel  --><div id="AssessmentLevel" data-role="page" is="page">
+  <div data-role="header" data-position="fixed">
+    <h3>Assessment</h3>
+  </div>
+  <div role="main" class="ui-content" is="content">
+    <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">Assessment Levels</li>
+      <li>
+        <a href="#">Significant Amount</a>
+      </li>
+      <li>
+        <a href="#">Moderate</a>
+      </li>
+      <li>
+        <a href="#">Minimal</a>
+      </li>
+      <li>
+        <a href="#">None</a>
+      </li>
+      <li>
+        <a href="#">No Data</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</body></html>
