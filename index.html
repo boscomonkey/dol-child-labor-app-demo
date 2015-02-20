@@ -9,10 +9,10 @@
     <div data-role="navbar">
       <ul>
         <li>
-          <a data-icon="home">Home</a>
+          <a data-icon="home" class="ui-btn-active ui-state-persist">Home</a>
         </li>
         <li>
-          <a data-icon="star" href="#Search">Search</a>
+          <a data-icon="star" href="#Search" data-transition="slide">Search</a>
         </li>
       </ul>
     </div>
@@ -30,32 +30,25 @@
     <ul data-role="listview" data-inset="true">
       <li data-role="list-divider">Choose Metric:</li>
       <li>
-        <a href="#">
-          <img src="images/image.png" class="ui-li-icon">Assessment Level</a>
+        <a href="#AssessmentLevel" data-transition="slide">Assessment Level</a>
       </li>
       <li>
-        <a href="#">
-          <img src="images/image.png" class="ui-li-icon">Country</a>
+        <a href="#">Country</a>
       </li>
       <li>
-        <a href="#">
-          <img src="images/image.png" class="ui-li-icon">Exploitation Type</a>
+        <a href="#">Exploitation Type</a>
       </li>
       <li>
-        <a href="#">
-          <img src="images/image.png" class="ui-li-icon">Industry</a>
+        <a href="#">Industry</a>
       </li>
       <li>
-        <a href="#">
-          <img src="images/image.png" class="ui-li-icon">Product</a>
+        <a href="#">Product</a>
       </li>
       <li>
-        <a href="#">
-          <img src="images/image.png" class="ui-li-icon">Social Programs</a>
+        <a href="#">Social Programs</a>
       </li>
       <li>
-        <a href="#">
-          <img src="images/image.png" class="ui-li-icon">Suggested Actions</a>
+        <a href="#">Suggested Actions</a>
       </li>
     </ul>
   </div>
@@ -63,10 +56,10 @@
     <div data-role="navbar">
       <ul>
         <li>
-          <a data-icon="home" href="#home">Home</a>
+          <a data-icon="home" href="#home" class="" data-transition="slidedown">Home</a>
         </li>
         <li>
-          <a data-icon="search">Search</a>
+          <a data-icon="search" class="ui-btn-active ui-state-persist">Search</a>
         </li>
       </ul>
     </div>
@@ -80,21 +73,133 @@
     <ul data-role="listview" data-inset="true">
       <li data-role="list-divider">Assessment Levels</li>
       <li>
-        <a href="#">Significant Amount</a>
+        <a href="#SignficantAmount" data-transition="slide">Significant Amount</a>
       </li>
       <li>
-        <a href="#">Moderate</a>
+        <a href="#ModerateAmount" data-transition="slide">Moderate</a>
       </li>
       <li>
-        <a href="#">Minimal</a>
+        <a href="#MinimalAmount" data-transition="slide">Minimal</a>
       </li>
       <li>
-        <a href="#">None</a>
+        <a href="#NoneAmount" data-transition="slide">None</a>
       </li>
       <li>
-        <a href="#">No Data</a>
+        <a href="#NoDataAmount" data-transition="slide">No Data</a>
       </li>
     </ul>
+  </div>
+  <div data-position="fixed" data-role="footer">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="home" href="#home" class="" data-transition="slidedown">Home</a>
+        </li>
+        <li>
+          <a data-icon="star" href="#Search" class="" data-transition="slideup">Search</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Page: SignficantAmount  --><div id="SignficantAmount" data-role="page" is="page">
+  <div data-role="header" data-position="fixed">
+    <h3>Amount</h3>
+  </div>
+  <div role="main" class="ui-content" is="content">
+    <div is="gk-text">Significant Amount</div>
+  </div>
+  <div data-position="fixed" data-role="footer">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="home" href="#home">Home</a>
+        </li>
+        <li>
+          <a data-icon="star" href="#Search">Search</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Page: ModerateAmount  --><div id="ModerateAmount" data-role="page" is="page">
+  <div data-role="header" data-position="fixed">
+    <h3>Amount</h3>
+  </div>
+  <div role="main" class="ui-content" is="content">
+    <div is="gk-text">Moderate</div>
+  </div>
+  <div data-position="fixed" data-role="footer">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="home" href="#home">Home</a>
+        </li>
+        <li>
+          <a data-icon="star" href="#Search">Search</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Page: MinimalAmount  --><div id="MinimalAmount" data-role="page" is="page">
+  <div data-role="header" data-position="fixed">
+    <h3>Amount</h3>
+  </div>
+  <div role="main" class="ui-content" is="content">
+    <div is="gk-text">Minimal</div>
+  </div>
+  <div data-position="fixed" data-role="footer">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="home" href="#home">Home</a>
+        </li>
+        <li>
+          <a data-icon="star" href="#Search">Search</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Page: NoneAmount  --><div id="NoneAmount" data-role="page" is="page">
+  <div data-role="header" data-position="fixed">
+    <h3>Amount</h3>
+  </div>
+  <div role="main" class="ui-content" is="content">
+    <div is="gk-text">None</div>
+  </div>
+  <div data-position="fixed" data-role="footer">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="home" href="#home">Home</a>
+        </li>
+        <li>
+          <a data-icon="star" href="#Search">Search</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Page: NoDataAmount  --><div id="NoDataAmount" data-role="page" is="page">
+  <div data-role="header" data-position="fixed">
+    <h3>Amount</h3>
+  </div>
+  <div role="main" class="ui-content" is="content">
+    <div is="gk-text">No Data</div>
+  </div>
+  <div data-position="fixed" data-role="footer">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="home" href="#home">Home</a>
+        </li>
+        <li>
+          <a data-icon="star" href="#Search">Search</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 </body></html>
